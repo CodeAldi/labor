@@ -80,6 +80,9 @@ class KategoriController extends Controller
      */
     public function destroy(Kategori $kategori)
     {
-        dd('berhasil masuk ke destroy');
+        $kategori->delete();
+        Session::flash('success', 'Kategori berhasil dihapus');
+        return redirect()->route('admin.dashboard.berita.kategori-berita.all');
+        // dd('berhasil masuk ke destroy',$kategori);
     }
 }
