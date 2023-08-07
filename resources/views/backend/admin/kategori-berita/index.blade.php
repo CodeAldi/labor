@@ -41,9 +41,10 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach ($kategoris as $kategori)
                                             <tr>
-                                                <td>1</td>
-                                                <td>Informasi</td>
+                                                <td>{{ $loop->iteration }}</td>
+                                                <td>{{ $kategori->nama_kategori }}</td>
                                                 <td>50</td>
                                                 <td class="text-center">
                                                     <a href="" class="btn btn-warning"><i class="far fa-edit"></i>
@@ -52,6 +53,7 @@
                                                         Hapus</a>
                                                 </td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>

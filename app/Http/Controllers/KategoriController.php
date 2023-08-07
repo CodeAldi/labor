@@ -14,7 +14,8 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        return view('backend.admin.kategori-berita.index');
+        $kategoris = Kategori::all();
+        return view('backend.admin.kategori-berita.index',['kategoris'=>$kategoris]);
     }
 
     /**
