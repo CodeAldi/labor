@@ -80,6 +80,6 @@ class KategoriController extends Controller
      */
     public function destroy(Kategori $kategori)
     {
-        //
+        dd('berhasil masuk ke destroy');
     }
 }

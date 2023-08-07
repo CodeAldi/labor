@@ -52,4 +52,5 @@ Route::controller(AdminDashboardController::class)->group(function(){
 Route::controller(KategoriController::class)->group(function(){
     Route::get('/dashboard/kategori-berita/all','index')->name('admin.dashboard.berita.kategori-berita.all');
     Route::post('/dashboard/kategori-berita/store', 'store')->name('admin.dashboard.berita.kategori-berita.store');
+    Route::delete('/dashboard/kategori-berita/{kategori}','destroy')->name('admin.dashboard.berita.kategori-berita.destroy');
 });

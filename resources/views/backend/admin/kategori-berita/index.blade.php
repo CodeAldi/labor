@@ -49,8 +49,12 @@
                                                 <td class="text-center">
                                                     <a href="" class="btn btn-warning"><i class="far fa-edit"></i>
                                                         Edit</a>
-                                                    <a href="" class="btn btn-danger"><i class="far fa-trash-alt"></i>
-                                                        Hapus</a>
+                                                        <form action="{{ route('admin.dashboard.berita.kategori-berita.destroy',['kategori'=>$kategori->id]) }}" method="post">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button class="btn btn-danger" type="submit"><i class="far fa-trash-alt"></i>
+                                                        Hapus</button>
+                                                        </form>
                                                 </td>
                                             </tr>
                                             @endforeach
