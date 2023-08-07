@@ -46,15 +46,22 @@
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $kategori->nama_kategori }}</td>
                                                 <td>50</td>
-                                                <td class="text-center">
-                                                    <a href="" class="btn btn-warning"><i class="far fa-edit"></i>
-                                                        Edit</a>
-                                                        <form action="{{ route('admin.dashboard.berita.kategori-berita.destroy',['kategori'=>$kategori->id]) }}" method="post">
+                                                <td class="text-center d-flex justify-content-around">
+                                                    <form action="">
+                                                        <button class="btn btn-warning" type="submit"><i
+                                                                class="far fa-edit"></i>
+                                                            Edit</button>
+                                                    </form>
+                                                    <a href=""></a>
+                                                    <form
+                                                        action="{{ route('admin.dashboard.berita.kategori-berita.destroy',['kategori'=>$kategori->id]) }}"
+                                                        method="post">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button class="btn btn-danger" type="submit"><i class="far fa-trash-alt"></i>
-                                                        Hapus</button>
-                                                        </form>
+                                                        <button class="btn btn-danger" type="submit"><i
+                                                                class="far fa-trash-alt"></i>
+                                                            Hapus</button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                             @endforeach
