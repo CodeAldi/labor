@@ -51,7 +51,6 @@
                                                             <button class="btn btn-warning" type="submit"><i class="far fa-edit"></i>
                                                                 Edit</button>
                                                         </form>
-                                                        <a href=""></a>
                                                         <form action="{{ route('admin.dashboard.berita.kategori-berita.destroy',['kategori'=>$kategori->id]) }}"
                                                             method="post">
                                                             @csrf
