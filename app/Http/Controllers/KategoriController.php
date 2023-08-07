@@ -72,7 +72,24 @@ class KategoriController extends Controller
      */
     public function update(Request $request, Kategori $kategori)
     {
-        //
+        $validated = $request->validate([
+            'nama' => 'required'
+        ]);
+        $nama_kategori = $request->nama;
+        $slug = preg_replace("/\s+/", "-", $nama_kategori);
+        $validator = Validator::make(['slug' => $slug], [
+            'slug' => 'unique:kategoris'
+        ]);
+        if ($validator->fails()) {
+            Session::flash('error', 'Kategori sudah ada !');
+            return redirect()->route('admin.dashboard.berita.kategori-berita.all');
+        }
+        $kategori->nama_kategori = $nama_kategori;
+        $kategori->slug = $slug;
+        $kategori->save();
+        Session::flash('success', 'Kategori Berhasil Diupdate');
+        return redirect()->route('admin.dashboard.berita.kategori-berita.all');
+        // dd('update');
     }
 
     /**
