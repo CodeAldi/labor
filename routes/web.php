@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\FrontPageController;
 use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
@@ -54,4 +55,8 @@ Route::controller(KategoriController::class)->group(function(){
     Route::post('/dashboard/kategori-berita/store', 'store')->name('admin.dashboard.berita.kategori-berita.store');
     Route::delete('/dashboard/kategori-berita/{kategori}','destroy')->name('admin.dashboard.berita.kategori-berita.destroy');
     Route::patch('/dashboard/kategori-berita/{kategori}/update','update')->name('admin.dashboard.berita.kategori-berita.update');
+});
+
+Route::controller(BeritaController::class)->group(function(){
+    Route::get('/dashboard/berita/all','index')->name('admin.dashboard.berita.all');
 });
