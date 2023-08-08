@@ -12,7 +12,7 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        //
+        return view('backend.admin.berita.index');
     }
 
     /**
