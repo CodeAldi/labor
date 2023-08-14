@@ -85,4 +85,9 @@ class FrontPageController extends Controller
         return view('front.download.download');
     }
     // menu halaman download end
+
+    // pindah halaman untuk tombol login dan register
+    function pindahLogin(){
+        return redirect()->away('https://www.unp.ac.id/');
+    }
 }

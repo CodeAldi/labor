@@ -37,8 +37,8 @@
             </div>
             <div class="row mt-md-0 mt-5">
                 <div class="col text-center">
-                    <a href="#" class="btn btn-dark">Daftar</a>
-                    <a href="#" class="btn btn-primary">Masuk</a>
+                    <a href="{{ route('pindahweblogin') }}" class="btn btn-dark">Daftar</a>
+                    <a href="{{ route('pindahweblogin') }}" class="btn btn-primary">Masuk</a>
                 </div>
             </div>
             <div class="row">
