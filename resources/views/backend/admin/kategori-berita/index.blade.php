@@ -9,11 +9,12 @@
                     <h1>Kategori Berita</h1>
                 </div>
             </div>
+        </div>
     </section>
     <section class="content">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Judul card</h3>
+                <h3 class="card-title">List kategori</h3>
             </div>
             <div class="card-body">
                 <div class="container-fluid">
@@ -130,7 +131,8 @@
                     @csrf
                     @method('PATCH')
                     <label for="#nama">Nama Kategori</label>
-                    <input type="text" name="nama" id="nama" class="form-control" value="{{ $kategori->nama_kategori }}" required>
+                    <input type="text" name="nama" id="nama" class="form-control" value="{{ $kategori->nama_kategori }}"
+                        required>
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
