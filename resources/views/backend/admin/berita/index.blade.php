@@ -16,7 +16,7 @@
             <div class="card-header">
                 <h3 class="card-title">List Berita</h3>
                 <div class="card-tools">
-                    <a href="" class="btn btn-primary"><i class="fas fa-plus-square"></i>Tulis Berita Baru</a>
+                    <a href="{{ route('admin.dashboard.berita.create') }}" class="btn btn-primary"><i class="fas fa-plus-square"></i>Tulis Berita Baru</a>
                 </div>
             </div>
             <div class="card-body">

@@ -59,4 +59,5 @@ Route::controller(KategoriController::class)->group(function(){
 
 Route::controller(BeritaController::class)->group(function(){
     Route::get('/dashboard/berita/all','index')->name('admin.dashboard.berita.all');
+    Route::get('/dashboard/berita/create','create')->name('admin.dashboard.berita.create');
 });

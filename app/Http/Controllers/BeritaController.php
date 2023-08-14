@@ -20,7 +20,7 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.admin.berita.create');
     }
 
     /**
