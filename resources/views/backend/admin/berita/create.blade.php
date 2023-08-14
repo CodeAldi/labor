@@ -26,9 +26,12 @@
                         <div class="col-sm-10">
                             <select name="kategori" id="kategori" class="form-control">
                                 <option value="#" disabled selected>Pilih Kategori</option>
-                                <option value="kategori 1">kategori 1</option>
-                                <option value="kategori 2">kategori 2</option>
-                                <option value="kategori 3">kategori 3</option>
+                                @forelse ($kategoris as $kategori)
+                                <option value="{{ $kategori->id }}">{{ $kategori->nama_kategori }}</option>
+                                    
+                                @empty
+                                   <option value="#" disabled class="bg-warning">Kategori Masih kosong, silahkan buat kategori terlebih dahulu pada menu kategori berita</option> 
+                                @endforelse
                             </select>
                         </div>
                     </div>
