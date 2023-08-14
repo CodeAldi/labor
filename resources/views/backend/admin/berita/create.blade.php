@@ -26,9 +26,9 @@
                         <div class="col-sm-10">
                             <select name="kategori" id="kategori" class="form-control">
                                 <option value="#" disabled selected>Pilih Kategori</option>
-                                <option value="">kategori 1</option>
-                                <option value="">kategori 2</option>
-                                <option value="">kategori 3</option>
+                                <option value="kategori 1">kategori 1</option>
+                                <option value="kategori 2">kategori 2</option>
+                                <option value="kategori 3">kategori 3</option>
                             </select>
                         </div>
                     </div>

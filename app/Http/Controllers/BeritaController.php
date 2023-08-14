@@ -28,7 +28,11 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
-        dd('store');
+        $judul = $request->judul;
+        $kategori = $request->kategori;
+        $thubmnail = $request->thumbnail;
+        $isi = $request->isi;
+        dd('store',$judul,$kategori,$thubmnail,$isi);
     }
 
     /**
