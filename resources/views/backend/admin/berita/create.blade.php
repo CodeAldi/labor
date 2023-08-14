@@ -22,6 +22,7 @@
                         <label for="inputPassword3" class="col-sm-2 col-form-label">Kategori</label>
                         <div class="col-sm-10">
                             <select name="kategori" id="kategori" class="form-control">
+                                <option value="#" disabled selected>Pilih Kategori</option>
                                 <option value="">kategori 1</option>
                                 <option value="">kategori 2</option>
                                 <option value="">kategori 3</option>
@@ -40,8 +41,8 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Sign in</button>
-                    <button type="submit" class="btn btn-default float-right">Cancel</button>
+                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-info">Create</button>
                 </div>
                 <!-- /.card-footer -->
             </form>
