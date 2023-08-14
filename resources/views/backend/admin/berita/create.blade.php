@@ -1,5 +1,7 @@
 @extends('layouts.backend.main')
 
+
+
 @section('content')
 <div class="content-wrapper">
     <section class="content-header">
@@ -10,12 +12,13 @@
             <div class="card-header">
                 <h2 class="card-title">Tulis Berita Baru</h2>
             </div>
-            <form class="form-horizontal">
+            <form class="form-horizontal" method="POST" action="{{ route('admin.dashboard.berita.store') }}">
+                @csrf
                 <div class="card-body">
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Judul</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Judul">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Judul" name="judul">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -31,10 +34,12 @@
                     </div>
                     <div class="form-group row">
                         <label for="customFile" class="col-sm-2 col-form-label">Custom File</label>
-                        
-                        <div class="custom-file col-sm-10">
-                            <input type="file" class="custom-file-input" id="customFile">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        <div class="input-group col-sm-10">
+                            <div class="custom-file ">
+                                <input type="file" class="custom-file-input" id="customFile" name="thumbnail">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+
                         </div>
                     </div>
                     <textarea name="isi" id="summernote"></textarea>
@@ -51,6 +56,16 @@
 </div>
 @endsection
 
+
+@push('script')
+<!-- bs-custom-file-input -->
+<script src="{{ asset('adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+<script>
+    $(function () {
+  bsCustomFileInput.init();
+});
+</script>
+@endpush
 
 @push('script')
 
