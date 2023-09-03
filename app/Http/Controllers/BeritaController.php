@@ -6,6 +6,7 @@ use App\Models\Berita;
 use App\Models\Kategori;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BeritaController extends Controller
 {
@@ -14,7 +15,8 @@ class BeritaController extends Controller
      */
     public function index()
     {
-        return view('backend.admin.berita.index');
+        $beritas = Berita::all();
+        return view('backend.admin.berita.index',['beritas'=>$beritas]);
     }
 
     /**
@@ -31,10 +33,12 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
+        $user = Auth::user()->id;
         $judul = $request->judul;
         $slug = preg_replace("/\s+/", "-", $judul);
         $kategori = $request->kategori;
-        $thubmnail = $request->thumbnail;
+        $image = $request->file('thumbnail')->store('news-thumbnail');
+        $thubmnail = $image;
         $isi = $request->isi;
 
 
@@ -44,7 +48,8 @@ class BeritaController extends Controller
         $berita->kategori_id = $kategori;
         $berita->body = $isi;
         $berita->singkat = Str::limit(strip_tags($isi), 50);
-        $berita->gambar = $thubmnail;
+        $berita->user_id = $user;
+        $berita->gambar = $image;
         $berita->save();
         return redirect()->route('admin.dashboard.berita.show');
     }
@@ -55,7 +60,8 @@ class BeritaController extends Controller
     public function show(Berita $berita)
     {
         $berita = Berita::all();
-        dd($berita);
+        // dd($berita[0]['kategori']);
+        return redirect()->route('admin.dashboard.berita.all');
     }
 
     /**

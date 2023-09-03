@@ -4,7 +4,7 @@
         <h1>Judul</h1>
         <p>Deskripsi</p>
         <img
-            src="{{ asset('images/dummy_600x400.png') }}"
+            src="{{ asset('images/informasi-pengujian/tarik/thumbnail.png') }}"
             class="w-100"
             alt=""
         />
@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (1).JPG') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p
@@ -49,7 +49,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (2).JPG') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p
@@ -74,7 +74,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (10).JPG') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p
@@ -93,16 +93,16 @@
         </div>
         <div class="row mt-3">
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (4).JPG') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (5).JPG') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (6).JPG') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/tarik/img (7).JPG') }}" width="100%" alt="">
             </div>
         </div>
     </div>

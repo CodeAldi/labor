@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     function LoginPage() : View {
         // render atau menampilkan halaman login
-        return view('auth.login',['page'=>'login-page']);
+        return view('auth.loginv2');
     }
 
     public function authenticate(Request $request): RedirectResponse
@@ -25,11 +25,22 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('admin.dashboard.home');
+            return redirect()->route('admin.dashboard.home');
         }
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
+    }
+
+    public function logout(Request $request): RedirectResponse
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

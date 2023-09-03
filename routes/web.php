@@ -46,6 +46,7 @@ Route::controller(FrontPageController::class)->group(function(){
 
 Route::controller(AuthController::class)->group(function(){
     Route::get('/admin/login','LoginPage')->middleware('guest')->name('login');
+    Route::get('/admin/logout','logout')->middleware('auth')->name('logout');
     Route::post('/admin/login/check', 'authenticate')->name('authenticate');
 });
 

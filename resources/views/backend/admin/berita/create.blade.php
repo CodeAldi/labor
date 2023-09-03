@@ -12,7 +12,7 @@
             <div class="card-header">
                 <h2 class="card-title">Tulis Berita Baru</h2>
             </div>
-            <form class="form-horizontal" method="POST" action="{{ route('admin.dashboard.berita.store') }}">
+            <form class="form-horizontal" method="POST" action="{{ route('admin.dashboard.berita.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body">
                     <div class="form-group row">

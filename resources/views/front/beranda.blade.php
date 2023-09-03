@@ -6,7 +6,7 @@
     <section id="jumbotron" class="container-fluid">
         <div class="hero container mb-md-5">
             <div class="row">
-                <div class="col fw-medium pt-4">Selamat Datang Di Website Laboratorium Terpadu</div>
+                <div class="col fw-medium pt-4">Selamat Datang Di Website UPT. Laboratorium Terpadu</div>
             </div>
             <div class="row">
                 <div class="col mt-4">
@@ -20,9 +20,9 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p class="text-break isi"><br />Pusat pelayanan laboratorium terpadu universitas negeri padang
-                        menyediakan berbagai jenis layanan pengujian yang telah terakredetasi dinasional dan
-                        internasional dan diakui oleh komite akredetasi nasional</p>
+                    <p class="text-break isi"><br />Pusat pelayanan <br>UPT. laboratorium terpadu Universitas Negeri Padang<br>
+                        menyediakan berbagai jenis layanan pengujian yang <br>telah terakredetasi dinasional dan
+                        internasional <br>dan diakui oleh komite akredetasi nasional</p>
                 </div>
             </div>
             <div class="row">
@@ -31,7 +31,7 @@
                         <div class="opacity-50 bg-white position-absolute" style="width: 100%; height: 70%"></div>
                         <div class="tulisan text-dark fw-bold text-center position-absolute top-0 w-100 py-2">
                             Kunjungi Sistem Informasi Laboratorium Terpadu UNP<br />Untuk Akses Informasi dan
-                            Melakukan Pendafaran Pengujian</div>
+                            Melakukan Pendaftaran Pengujian</div>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div id="berita" class="carousel slide">
+        <div id="berita" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#berita" data-bs-slide-to="0" class="active border bg-black"
@@ -84,7 +84,7 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <!-- carousel item 1 -->
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval-500>
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -143,9 +143,23 @@
                 <h2 class="fw-bold text-center text-decoration-underline" style="color: orangered;">Berita Pilihan
                 </h2>
                 <div class="row justify-content-around">
+                    @forelse ($beritas as $berita)
                     <div class="col col-md-4 ">
                         <div class="card" >
-                            <img src="images/carousel/slide 1.jpg" class="card-img-top object-fit-cover" alt="..."
+                            <img src="{{ asset('storage/'. $berita->gambar) }}" class="card-img-top object-fit-cover" alt="..."
+                                style="height: 12rem;" />
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $berita->judul }}</h5>
+                                <p class="card-text">{{ $berita->singkat }}.</p>
+                                <a href="#" class="btn btn-primary">Baca Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                    @empty
+                        
+                    <div class="col col-md-4">
+                        <div class="card" >
+                            <img src="images/carousel/slide 2.jpg" class="card-img-top object-fit-cover" alt="..."
                                 style="height: 12rem;" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -179,6 +193,7 @@
                             </div>
                         </div>
                     </div>
+                    @endforelse
                 </div>
             </div>
         </div>
@@ -197,10 +212,24 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <video class="w-100" src="" controls></video>
+                    <video class="w-100" src="{{ asset('vid/Video Profil Laboratorium Terpadu UNP.mp4') }}" controls></video>
                 </div>
             </div>
     </section>
     <!-- section video profil end -->
 </main>
 @endsection
+
+@push('script')
+    <script>
+        const myCarouselElement = new bootstrap.Carousel("#berita");
+          const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 2000,
+            touch: false,
+            items:1,
+            autoplay:true,
+            autoplayTimeout:3000,
+            loop:true,
+          });
+    </script>
+@endpush

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -10,7 +11,8 @@ class FrontPageController extends Controller
     // menu beranda start
     function Beranda() : View {
         // menampilkan halaman beranda
-        return view('front.beranda');
+        $beritas = Berita::all();
+        return view('front.beranda',['beritas'=>$beritas]);
     }
     // menu beranda end
 
@@ -88,6 +90,6 @@ class FrontPageController extends Controller
 
     // pindah halaman untuk tombol login dan register
     function pindahLogin(){
-        return redirect()->away('https://www.unp.ac.id/');
+        return redirect()->away('https://labterpadu.unp.ac.id/console/');
     }
 }

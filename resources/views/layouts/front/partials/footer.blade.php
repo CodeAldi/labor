@@ -52,7 +52,7 @@
         <div class="row">
             <hr>
             <div class="d-flex flex-column flex-sm-row justify-content-between">
-                <p>&copy; 2023 Laboratorium Terpadu, Universitas Negeri Padang. All rights reserved.</p>
+                <p>&copy; 2023 UPT. Laboratorium Terpadu, Universitas Negeri Padang. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook"></i></a>
                     </li>

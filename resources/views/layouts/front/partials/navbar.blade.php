@@ -42,6 +42,7 @@
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.batubara'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.batubara') }}">Batubara</a></li>
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.xrd'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.xrd') }}">XRD</a></li>
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.kekerasan'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.kekerasan') }}">Kekerasan Bahan</a></li>
+                        <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.kekerasan'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.kekerasan') }}">Uji Halal</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -56,6 +57,9 @@
                     </ul>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link {{ (Request::routeIs('hubungiKami'))? 'active bg-primary text-light rounded-pill fw-bold ': '' }}" href="{{ route('hubungiKami') }}">Alur Pengujian</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link {{ (Request::routeIs('hubungiKami'))? 'active bg-primary text-light rounded-pill fw-bold ': '' }}" href="{{ route('hubungiKami') }}">Hubungi Kami</a>
                 </li>

@@ -9,7 +9,9 @@
 }
 
 .isi {
-    color: rgb(110, 125, 177);
+    color: rgb(42, 57, 112);
+    font-size: larger;
+    font-weight: 500;
 }
 
 .tulisan {
@@ -18,7 +20,7 @@
 
 .logo2 {
     position: absolute;
-    top: 39rem;
+    top: 43rem;
     left: 6.55rem;
 }
 
