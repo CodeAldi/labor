@@ -1,9 +1,7 @@
 @extends('layouts.front.main') @section('content')
 <main>
     <div class="container pt-5">
-        <h1>Judul</h1>
-        <p>Deskripsi</p>
-        <img src="{{ asset('images/dummy_600x400.png') }}" class="w-100" alt="" />
+        <img src="{{ asset('images/informasi-pengujian/XRD/thumbnail.png') }}" class="w-100" alt="" />
         <p class="py-2" style="text-align: justify; text-justify: inter-word">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
             sapiente debitis voluptatem eos aperiam? Numquam tenetur saepe harum
@@ -20,7 +18,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (1).jpg') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p class="" style="text-align: justify; text-justify: inter-word">
@@ -42,7 +40,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (2).jpg') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p class="" style="text-align: justify; text-justify: inter-word">
@@ -64,7 +62,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="" />
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (3).jpg') }}" width="100%" alt="" />
             </div>
             <div class="col-8">
                 <p class="" style="text-align: justify; text-justify: inter-word">
@@ -80,16 +78,16 @@
         </div>
         <div class="row mt-3">
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (8).jpg') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (5).jpg') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (6).jpg') }}" width="100%" alt="">
             </div>
             <div class="col-3">
-                <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                <img src="{{ asset('images/informasi-pengujian/XRD/img (7).jpg') }}" width="100%" alt="">
             </div>
         </div>
     </div>
