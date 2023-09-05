@@ -61,8 +61,8 @@
     </section>
     <!-- section jumbotron end -->
     <!-- section news start -->
-    <section id="beritadaninformasi">
-        <div class="container" style="margin-top:90px;">
+    <section id="beritadaninformasi" class="card rounded-5" style="top:45px;">
+        <div class="container mt-2">
             <h2 class="fw-bold text-decoration-underline" style="color: orangered;">Berita Dan Informasi <span
                     class="">Terkini</span></h2>
             <div class="container">
@@ -88,7 +88,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img class="img-thumbnail" src="images/carousel/slide 1.jpg" alt="" />
+                                <img class="img-thumbnail object-fit-cover" src="images/carousel/slide 1.jpg" alt="" style="height: 20rem; width:100%;" />
                             </div>
                             <div class="col">
                                 <h1><a href="">Universitas Negeri Padang</a></h1>
@@ -103,7 +103,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img class="img-thumbnail" src="images/carousel/slide 2.jpg" alt="" />
+                                <img class="img-thumbnail object-fit-cover" src="images/carousel/slide 2.jpg" alt="" style="height: 20rem; width:100%;" />
                             </div>
                             <div class="col">
                                 <h1><a href="">Universitas Negeri Padang 2</a></h1>
@@ -118,7 +118,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <img class="img-thumbnail" src="images/carousel/slide 3.jpg" alt="" />
+                                <img class="img-thumbnail object-fit-cover" src="images/carousel/slide 3.jpg" alt="" style="height: 20rem; width:100%;" />
                             </div>
                             <div class="col">
                                 <h1><a href="">Universitas Negeri Padang 3</a></h1>
