@@ -16,9 +16,10 @@ return new class extends Migration
             $table->string('judul');
             $table->string('slug');
             $table->string('singkat');
-            $table->string('body');
+            $table->text('body');
             $table->string('gambar');
             $table->boolean('is_published')->default(0);
+            $table->boolean('is_pinned')->default(0);
             $table->foreignId('kategori_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
