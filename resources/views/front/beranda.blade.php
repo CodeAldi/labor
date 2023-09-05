@@ -212,7 +212,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <video class="w-100" src="{{ asset('vid/Video Profil Laboratorium Terpadu UNP.mp4') }}" controls></video>
+                    <video class="w-100" src="{{ asset('vid/Video Profil Laboratorium Terpadu UNP.mp4') }}" controls poster="{{ asset('vid/thumbnail_vid.png') }}"></video>
                 </div>
             </div>
     </section>
