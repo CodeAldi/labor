@@ -58,7 +58,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{ (Request::routeIs('hubungiKami'))? 'active bg-primary text-light rounded-pill fw-bold ': '' }}" href="{{ route('hubungiKami') }}">Alur Pengujian</a>
+                    <a class="nav-link {{ (Request::routeIs('front.alur'))? 'active bg-primary text-light rounded-pill fw-bold ': '' }}" href="{{ route('front.alur') }}">Alur Pengujian</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ (Request::routeIs('hubungiKami'))? 'active bg-primary text-light rounded-pill fw-bold ': '' }}" href="{{ route('hubungiKami') }}">Hubungi Kami</a>

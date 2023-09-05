@@ -88,6 +88,12 @@ class FrontPageController extends Controller
     }
     // menu halaman download end
 
+    // menu halaman download start
+    function Alur() : View {
+        return view('front.alur');
+    }
+    // menu halaman download end
+
     // pindah halaman untuk tombol login dan register
     function pindahLogin(){
         return redirect()->away('https://labterpadu.unp.ac.id/console/');

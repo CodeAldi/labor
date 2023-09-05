@@ -39,6 +39,8 @@ Route::controller(FrontPageController::class)->group(function(){
     Route::get('hubungi-kami','Hubungi')->name('hubungiKami');
     // menu download
     Route::get('download','Download')->name('front.download');
+    // menu alur pelayanan
+    Route::get('alur','Alur')->name('front.alur');
     // pindah halaman
     Route::get('/pindahlogin', 'pindahLogin')->name('pindahweblogin');
 
