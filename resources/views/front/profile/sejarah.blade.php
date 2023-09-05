@@ -5,10 +5,9 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-9">
-                <h1>Judul</h1>
-                <p>deskripsi</p>
+                <h1 class="text-center">Sejarah Singkat Laboratorium Terpadu<br/>Universitas Negeri Padang</h1>
                 <article>
-                    <img src="{{ asset('images/dummy_600x400.png') }}" width="100%" alt="">
+                    <img src="{{ asset('images/labor.jpg') }}" class="img-thumbnail" width="100%" alt="">
                     <p class="pt-2" style="text-align: justify; text-justify: inter-word">
                     Laboratorium Terpadu Universitas Negeri Padang merupakan salah satu divisi pada Pusat Pengembangan Laboratorium Terpadu
                     di lingkungan UNP yang berdiri berdasarkan Surat Keputusan Rektor No. 3509 Tahun 2017 tentang Standar Pelayanan Publik
