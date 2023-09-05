@@ -1,8 +1,6 @@
 @extends('layouts.front.main') @section('content')
 <main>
     <div class="container pt-5">
-        <h1>Judul</h1>
-        <p>Deskripsi</p>
         <img
             src="{{ asset('images/informasi-pengujian/tarik/thumbnail.png') }}"
             class="w-100"
