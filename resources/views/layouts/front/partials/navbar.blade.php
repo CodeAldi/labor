@@ -42,7 +42,7 @@
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.batubara'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.batubara') }}">Batubara</a></li>
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.xrd'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.xrd') }}">XRD</a></li>
                         <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.kekerasan'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.kekerasan') }}">Kekerasan Bahan</a></li>
-                        <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.kekerasan'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.kekerasan') }}">Uji Halal</a></li>
+                        <li><a class="dropdown-item {{ (Request::routeIs('informasiPengujian.halal'))? 'active text-decoration-underline ': '' }}" href="{{ route('informasiPengujian.halal') }}">Uji Halal</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

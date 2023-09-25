@@ -31,6 +31,7 @@ Route::controller(FrontPageController::class)->group(function(){
     Route::get('/informasi-pengujian/batu-bara', 'Batubara')->name('informasiPengujian.batubara');
     Route::get('/informasi-pengujian/xrd', 'Xrd')->name('informasiPengujian.xrd');
     Route::get('/informasi-pengujian/kekerasan-bahan', 'Kekerasan')->name('informasiPengujian.kekerasan');
+    Route::get('/informasi-pengujian/halal', 'Halal')->name('informasiPengujian.halal');
     // menu tentang kami
     Route::get('/tentang-kami/laboratorium', 'Laboratorium')->name('tentangKami.laboratorium');
     Route::get('/tentang-kami/fasilitas', 'Fasilitas')->name('tentangKami.fasilitas');

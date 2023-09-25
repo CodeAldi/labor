@@ -57,6 +57,11 @@ class FrontPageController extends Controller
         // menampilkan halaman kekerasan bahan
         return view('front.informasi-pengujian.kekerasan');
     }
+    function Halal(): View
+    {
+        // menampilkan halaman kekerasan bahan
+        return view('front.informasi-pengujian.halal');
+    }
     // menu informasi pengujian end
 
     // menu tentang kami start
