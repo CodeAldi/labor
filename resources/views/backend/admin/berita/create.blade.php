@@ -49,7 +49,9 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-default">Cancel</button>
+                    <a href="{{ route('admin.dashboard.berita.all') }}">
+                        <button type="button" class="btn btn-default">Cancel</button>
+                    </a>
                     <button type="submit" class="btn btn-info">Create</button>
                 </div>
                 <!-- /.card-footer -->
