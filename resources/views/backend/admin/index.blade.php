@@ -30,7 +30,7 @@
                                 
                                     <div class="info-box-content">
                                         <span class="info-box-text">Berita</span>
-                                        <span class="info-box-number">13,648</span>
+                                        <span class="info-box-number">{{ $berita }}</span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>
