@@ -40,8 +40,8 @@
                                         <td class="text-center">1</td>
                                         <td>{{ $berita->judul }}</td>
                                         <td>{{ $berita->kategori->nama_kategori }}</td>
-                                        <td>Terbit</td>
-                                        <td>{{ $berita->created_at->isoFormat('D MMMM Y , H:m a') }}</td>
+                                        <td>{{ $berita->is_published? 'terbit':'draft' }}</td>
+                                        <td>{{ $berita->created_at->isoFormat('D MMMM Y') }}</td>
                                         <td class="text-center">
                                             <a href="" class="btn btn-success"><i class="fas fa-thumbtack"></i>Pin</a>
                                             <a href="" class="btn btn-primary"><i class="far fa-eye"></i>Lihat</a>
