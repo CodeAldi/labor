@@ -18,7 +18,7 @@
                     <div class="form-group row">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Judul</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="Judul" name="judul">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Judul" name="judul" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -40,12 +40,12 @@
                         <div class="input-group col-sm-10">
                             <div class="custom-file ">
                                 <input type="file" class="custom-file-input" id="customFile" name="thumbnail">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                <label class="custom-file-label" for="customFile" required>Choose file</label>
                             </div>
 
                         </div>
                     </div>
-                    <textarea name="isi" id="summernote"></textarea>
+                    <textarea name="isi" id="summernote" required></textarea>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
