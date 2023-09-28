@@ -46,7 +46,7 @@
                                             <a href="" class="btn btn-success"><i class="fas fa-thumbtack"></i>Pin</a>
                                             <a href="" class="btn btn-primary"><i class="far fa-eye"></i>Lihat</a>
                                             <a href="" class="btn btn-warning"><i class="far fa-edit"></i>Edit</a>
-                                            <a href="" class="btn btn-danger"><i class="far fa-trash-alt"></i>Delete</a>
+                                            <a href="{{ route('admin.dashboard.berita.destroy',['berita'=>$berita]) }}" class="btn btn-danger"><i class="far fa-trash-alt"></i>Delete</a>
                                         </td>
                                     </tr>
                                         

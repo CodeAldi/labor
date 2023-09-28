@@ -69,4 +69,5 @@ Route::controller(BeritaController::class)->middleware('auth')->group(function()
     Route::get('/dashboard/berita/create','create')->name('admin.dashboard.berita.create');
     Route::post('/dashboard/berita/store','store')->name('admin.dashboard.berita.store');
     Route::get('/dashboard/berita/show','show')->name('admin.dashboard.berita.show');
+    Route::get('/dashboard/berita/{berita}/delete','destroy')->name('admin.dashboard.berita.destroy');
 });

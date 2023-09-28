@@ -7,6 +7,7 @@ use App\Models\Kategori;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class BeritaController extends Controller
 {
@@ -85,6 +86,10 @@ class BeritaController extends Controller
      */
     public function destroy(Berita $berita)
     {
-        //
+        $gambar=$berita->gambar;
+        Storage::disk('public')->delete($gambar);
+        $berita->delete();
+        return back();
+        
     }
 }
