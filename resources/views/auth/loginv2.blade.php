@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Login V2</title>
+    <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="{{ asset('loginstyle/v2/images/icons/favicon.ico') }}" />
+    <link rel="icon" type="image/png" href="{{ asset('images/LOGO UNIVERSITAS NEGERI PADANG.png') }}" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{{ asset('loginstyle/v2/vendor/bootstrap/css/bootstrap.min.css') }}">
     <!--===============================================================================================-->
