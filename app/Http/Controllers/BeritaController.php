@@ -37,7 +37,7 @@ class BeritaController extends Controller
         $judul = $request->judul;
         $slug = preg_replace("/\s+/", "-", $judul);
         $kategori = $request->kategori;
-        $image = $request->file('thumbnail')->store('news-thumbnail');
+        $image = $request->file('thumbnail')->store('news-thumbnail','public');
         $thubmnail = $image;
         $isi = $request->isi;
 
